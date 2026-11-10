@@ -157,6 +157,9 @@ class _LoginPageState extends State<LoginPage> {
         destination = '/student-dashboard';
       } else if (role == 'Lecturer') {
         destination = '/lecturer-dashboard';
+      } else if (role == 'Administrator') {
+        // NEW: Administrator login destination.
+        destination = '/admin-dashboard';
       } else {
         await FirebaseAuth.instance.signOut();
 

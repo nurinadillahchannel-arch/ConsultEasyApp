@@ -8,6 +8,8 @@ import 'screens/student_dashboard.dart';
 import 'screens/lecturer_dashboard.dart';
 import 'screens/manage_availability.dart';
 import 'screens/available_consultations.dart';
+import 'screens/admin_dashboard.dart';
+import 'screens/report_management_page.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -92,6 +94,14 @@ class ConsultEasyApp extends StatelessWidget {
 
         '/lecturer-dashboard': (context) =>
             const LecturerDashboardPage(),
+
+        // NEW: Administrator dashboard.
+        '/admin-dashboard': (context) =>
+            const AdminDashboardPage(),
+
+        // NEW: Shared role-aware report page.
+        '/reports': (context) =>
+            const ReportManagementPage(),
 
         '/manage-availability': (context) =>
             const ManageAvailabilityPage(),
